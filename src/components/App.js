@@ -1,27 +1,43 @@
 import React from "react";
 
 // import Accordion from "./Accordion";
-import Search from "./Search";
+// import Search from "./Search";
+import Dropdown from "./Dropdown";
 
-const items = [
+// const items = [
+//   {
+//     title: "What is React?",
+//     content: "React is a JS framework",
+//   },
+//   {
+//     title: "What are benefits of React?",
+//     content: "React is a JS framework",
+//   },
+//   {
+//     title: "What is React so popular?",
+//     content: "React is a JS framework",
+//   },
+// ];
+
+const options = [
   {
-    title: "What is React?",
-    content: "React is a JS framework",
+    label: "The Fiery Red",
+    value: "red",
   },
   {
-    title: "What are benefits of React?",
-    content: "React is a JS framework",
+    label: "The Color Yellow",
+    value: "yellow",
   },
   {
-    title: "What is React so popular?",
-    content: "React is a JS framework",
+    label: "A Shade of Blue",
+    value: "blue",
   },
 ];
 
 const App = () => {
   return (
     <div>
-      <Search />
+      <Dropdown options={options} />
     </div>
   );
 };
