@@ -4,6 +4,7 @@ import React, { useState } from "react";
 // import Search from "./Search";
 // import Dropdown from "./Dropdown";
 import Translate from "./Translate";
+import Header from "./Header";
 
 // const items = [
 //   {
@@ -40,6 +41,7 @@ const App = () => {
 
   return (
     <div>
+      <Header />
       <Translate />
     </div>
   );
